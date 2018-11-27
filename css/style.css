@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.main-navigation {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:focus {
+	color: #b2b2b2
+}
+
+.promo {
+	background-color: #9faab6;
+	background-image: url("../img/background-photo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+b {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+p {
+	font-weight: normal;
+	color: #333333;
+}
+
+.search-hotel h2 {
+	font-size: 30px;
+	line-height: 36px;
+	color: #000000;
+}
+
+.modal-open-button {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: #766357;
+	border: none;
+}
+
+.modal-open-button:hover {
+	background-color: #604e43;
+}
+
+.modal-open-button:focus,
+.modal-open-button:active {
+	background-color: #503e33
+}
+
+.search-hotel-form input {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #000000;
+	background-color: #f2f2f2;
+	border: none;
+}
+
+::-webkit-input-placeholder {color:#000000;}
+::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
+:-moz-placeholder           {color:#000000;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000000;}
+
+.search-hotel-form input:hover {
+	background-color: #ebebeb;
+}
+
+.search-hotel-form input:focus {
+	background-color: transparent;
+	border-color: 2px solid #ebebeb;
+}
+
+.search-hotel-form label {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+	color: #000000;
+}
+
+.modal-search-button {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: #81b3d2;
+	border: none;
+}
+
+.modal-search-button:hover {
+	background-color: #669ec0;
+}
+
+.modal-search-button:focus,
+.modal-search-button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+footer {
+	color: #000000;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-copyright span {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+	color: #000000;
+}
