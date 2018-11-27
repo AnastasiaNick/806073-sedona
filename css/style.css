@@ -33,7 +33,7 @@ a {
 }
 
 .site-navigation a:focus {
-	color: #b2b2b2
+	color: #b2b2b2;
 }
 
 .promo {
@@ -78,7 +78,8 @@ p {
 
 .modal-open-button:focus,
 .modal-open-button:active {
-	background-color: #503e33
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .search-hotel-form input {
@@ -131,6 +132,80 @@ p {
 .modal-search-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
+}
+
+.catalog-item h3 {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.catalog-item a {
+	color: #000000;
+}
+
+.catalog-item a:hover {
+	color: #81b3d2;
+}
+
+.catalog-item a:active {
+	color: #b2b2b2;
+}
+
+.catalog-item-price span {
+	font-size: 14px;
+	line-height: 21px;
+	color: #333333;
+}
+
+.catalog-item-price .button,
+.catalog-item-price .button-order {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	border: none;
+}
+
+.catalog-item-price .button {
+	background-color: #81b3d2;
+}
+
+.catalog-item-price .button:hover {
+	color: #ffffff;
+	background-color: #669ec0;
+}
+
+.catalog-item-price .button:focus,
+.catalog-item-price .button:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #5496bd;
+}
+
+.catalog-item-price .button-order {
+	background-color: #766357;
+}
+
+.catalog-item-price .button-order:hover {
+	color: #ffffff;
+	background-color: #604e43;
+}
+
+.catalog-item-price .button-order:focus,
+.catalog-item-price .button-order:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #503e33;
+}
+
+.catalog-item .rate {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #666666;
+	background-color: #f2f2f2;
 }
 
 footer {
