@@ -34,8 +34,13 @@ a {
 	color: #81b3d2;
 }
 
-.site-navigation a:focus {
+.site-navigation a:focus,
+.site-navigation a:active {
 	color: #b2b2b2;
+}
+
+.site-navigation-current a {
+	color: #766357;
 }
 
 .promo {
