@@ -14,10 +14,12 @@ a {
 	text-decoration: none;
 }
 
+.main-header {
+	background-color: #ffffff;
+}
 
 .main-navigation {
 	color: #000000;
-	background-color: #ffffff;
 }
 
 .site-navigation {
