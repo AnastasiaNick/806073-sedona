@@ -43,13 +43,13 @@ a {
 	color: #766357;
 }
 
-main b {
+.tagline {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
 }
 
-main p {
+.summary {
 	font-weight: normal;
 	color: #333333;
 }
@@ -59,6 +59,42 @@ main p {
 	background-image: url("../img/background-photo.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
+}
+
+.reasons-list {
+	list-style: none;
+}
+
+.reasons-list h3 {
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.reasons-item p,
+.reasons-item span {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.reason-blue {
+	background-color: #81b3d2;
+}
+
+.reason-blue h3,
+.reason-blue span,
+.reason-blue p {
+	color: #ffffff;
+}
+
+.reason-grey {
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.reason-points {
+	color: #000000;
+	background-color: #ffffff;
 }
 
 .search-hotel h2 {
