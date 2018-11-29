@@ -128,7 +128,7 @@ a {
 	line-height: 26px;
 	color: #000000;
 	background-color: #f2f2f2;
-	border: none;
+	border: 2px solid #f2f2f2;
 }
 
 ::-webkit-input-placeholder {color:#000000;}
@@ -138,6 +138,7 @@ a {
 
 .search-hotel-form input:hover {
 	background-color: #ebebeb;
+	border: 2px solid #ebebeb;
 }
 
 .search-hotel-form input:focus {
