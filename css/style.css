@@ -177,6 +177,99 @@ a {
 	background-color: #5496bd;
 }
 
+.hotel-filters {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ffffff;
+	background-color: #4e555c;
+	background-image: url("../img/filter-background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.hotel-filters fieldset {
+	border: none;
+}
+
+.hotel-filters legend {
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.hotel-filters ul {
+	list-style: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #ffffff;
+}
+
+.filter-input:disabled + label {
+	color: #4e555c;
+}
+
+.filter-button {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 2px solid #ffffff;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.sorting-filters {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.sorting-filters p {
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.sorting-title {
+	color: #000000;
+}
+
+.sorting-list {
+	list-style: none;
+}
+
+.sorting-item a {
+	color: #766357;
+	border-bottom: 1px dashed #766357;
+}
+
+.sorting-item a:hover {
+	color: #81b3d2;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-item a:focus,
+.sorting-item a:active {
+	color: #000000;
+	border-bottom: none;
+}
+
+.sorting-item-active a {
+	color: #81b3d2;
+}
+
 .catalog-item h3 {
 	font-size: 21px;
 	line-height: 26px;
