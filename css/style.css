@@ -14,16 +14,60 @@ a {
 	text-decoration: none;
 }
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*
+.wrapper {
+	width: 1055px;
+	margin: 0 auto;
+}
+*/
+
 .main-header {
 	background-color: #ffffff;
+	min-height: 55px;
 }
 
 .main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
 	color: #000000;
 }
 
+.main-header-logo {
+/* Временно для сетки */
+	display: block;
+	align-self: center;
+	width: 140px;
+	height: 72px;
+}
+
 .site-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 1055px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+.site-navigation li:nth-child(2),
+.site-navigation li:nth-child(4) {
+	margin-left: 100px;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 120px;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-left: 120px;
 }
 
 .site-navigation a {
@@ -41,6 +85,11 @@ a {
 
 .site-navigation-current a {
 	color: #766357;
+}
+
+.promo img {
+	width: 459px;
+	height: 353px;
 }
 
 .tagline {
@@ -268,6 +317,10 @@ a {
 	color: #81b3d2;
 }
 
+.catalog-list {
+	list-style: none;
+}
+
 .catalog-item h3 {
 	font-size: 21px;
 	line-height: 26px;
@@ -347,12 +400,29 @@ footer {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
+footer .container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-hashtag {
+	width: 160px;
+	margin-right: 245px;
+}
+
 .footer-social {
+	width: 160px;
 	text-align: center;
 }
 
 .footer-social ul {
 	list-style: none;
+}
+
+.footer-copyright {
+	width: 200px;
+	margin: 0;
+	margin-left: 225px;
 }
 
 .footer-copyright span {
