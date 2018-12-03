@@ -51,7 +51,7 @@ a {
 }
 
 .site-navigation li {
-	width: 100px;
+	width: 240px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -323,7 +323,6 @@ a {
 .catalog-item {
 	display: flex;
 	align-items: center;
-	width: 1055px;
 }
 
 .catalog-item h3 {
@@ -338,8 +337,6 @@ a {
 }
 
 .catalog-item-info {
-	display: flex;
-	flex-wrap: wrap;
 	width: 255px;
 	margin-right: auto;
 }
@@ -424,12 +421,12 @@ footer {
 }
 
 .footer-hashtag {
-	width: 200px;
+	width: 400px;
 	text-align: center;
 }
 
 .footer-social {
-	width: 200px;
+	width: 400px;
 	text-align: center;
 }
 
@@ -438,7 +435,7 @@ footer {
 }
 
 .footer-copyright {
-	width: 200px;
+	width: 400px;
 	margin: 0;
 	text-align: center;
 }
