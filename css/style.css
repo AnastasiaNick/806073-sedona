@@ -110,12 +110,26 @@ a {
 }
 
 .reasons-list {
+	display: flex;
+	flex-wrap: wrap;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .reasons-list h3 {
 	font-size: 21px;
 	line-height: 21px;
+}
+
+.reasons-item {
+	flex-grow: 1;
+}
+
+.reasons-item:nth-child(1),
+.reasons-item:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .reasons-item p,
@@ -124,7 +138,23 @@ a {
 	line-height: 21px;
 }
 
+.reason-img img {
+	display: block;
+	width: 800px;
+}
+
+.reasons-item:nth-child(2) .reason-description {
+	order: 1;
+}
+
+.reason-points {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
 .reason-blue {
+	width: 400px;
 	color: #ffffff;
 	background-color: #81b3d2;
 }
