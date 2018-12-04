@@ -279,6 +279,18 @@ a {
 	list-style: none;
 }
 
+.filter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 215px;
+}
+
+
+fieldset.type {
+	margin-right: auto;
+}
+
 .filter-input:hover + label,
 .filter-input:focus + label {
 	color: #ffffff;
@@ -307,6 +319,9 @@ a {
 }
 
 .sorting-filters {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	font-size: 12px;
 	line-height: 18px;
 }
@@ -317,15 +332,36 @@ a {
 	color: #000000;
 }
 
+.sorting-filters .wrapper {
+	width: 118px;
+	margin-right: 40px;
+}
+
+.sorting {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+}
+
 .sorting-title {
+	font-size: 12px;
+	line-height: 18px;
 	color: #000000;
 }
 
 .sorting-list {
+	display: flex;
 	list-style: none;
+	margin-right: auto;
+}
+
+.sorting-item {
+	margin-right: 25px;
 }
 
 .sorting-item a {
+	font-size: 12px;
+	line-height: 18px;
 	font-weight: 400;
 	color: #766357;
 	border-bottom: 1px dotted #766357;
