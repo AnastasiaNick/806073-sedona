@@ -15,10 +15,10 @@
 						<img src="img/logo.svg" width="140px" height="72px" alt="Логотип города Седона">
 					</a>
 					<ul class="site-navigation">
-							<li><a href="info.html">Информация</a></li>
-							<li><a href="gallery.html">Фото и видео</a></li>
-							<li><a href="map.html">Карта штата</a></li>
-							<li><a href="inner.html">Гостиницы</a></li>
+						<li><a href="info.html">Информация</a></li>
+						<li><a href="gallery.html">Фото и видео</a></li>
+						<li><a href="map.html">Карта штата</a></li>
+						<li><a href="inner.html">Гостиницы</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -27,7 +27,9 @@
 				<div class="promo">
 					<img src="img/promo-welcome.svg" width="459px" height="353px" alt="Добро пожаловать в Седона">
 				</div>
-				<b class="tagline">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+				<div class="tagline">
+					<b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+				</div>
 				<p class="summary">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 				<section class="reasons">
 					<h2 class="visually-hidden">Причины посетить в Седону</h2>
@@ -93,23 +95,21 @@
 				<section class="modal-search">
 					<h2 class="visually-hidden">Параметры поиска гостиницы в Седоне</h2>
 					<form class="search-hotel-form" action="https://echo.htmlacademy.ru" method="post">
-						<p class="arrival-item">
+						<p class="search-hotel-item arrival-item">
 							<label for="arrival-date">Дата заезда:</label>
 							<input id="arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-							<button class="calendar" type="button">Календарь</button>
 						</p>
-						<p class="departure-item">
+						<p class="search-hotel-item departure-item">
 							<label for="departure-date">Дата выезда:</label>
 							<input id="departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
-							<button class="calendar" type="button">Календарь</button>
 						</p>
-						<p class="adult-item">
+						<p class="search-hotel-item adult-item">
 							<label for="adult-number">Взрослые:</label>
 							<button class="number-btn" type="button">Минус</button>
 							<input id="adult-number" type="text" name="adult-number" value="" placeholder="2">
 							<button class="number-btn" type="button">Плюс</button>
 						</p>
-						<p class="children-item">
+						<p class="search-hotel-item children-item">
 							<label class="children-number" for="children-number">Дети:</label>
 							<button class="number-btn" type="button">Минус</button>
 							<input id="children-number" type="text" name="children-number" value="" placeholder="0">
