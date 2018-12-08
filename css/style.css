@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	position: relative;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
@@ -35,6 +36,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 main {
+	position: relative;
 	text-align: center;
 }
 
@@ -186,6 +188,10 @@ main {
 	width: 800px;
 }
 
+.reasons-item:nth-child(2) {
+	display: flex;
+}
+
 .reasons-item:nth-child(2) .reason-description {
 	order: 1;
 }
@@ -219,9 +225,16 @@ main {
 }
 
 .search-hotel h2 {
+	margin: 0;
+	margin-bottom: 25px;
 	font-size: 30px;
 	line-height: 36px;
 	color: #000000;
+}
+
+.search-hotel p {
+	margin: 0;
+	margin-bottom: 45px;
 }
 
 .modal-open-button {
@@ -247,14 +260,27 @@ main {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-.search-hotel-form {
-	background-color: #ffffff;
-	width: 575px;
-	margin: 0 auto;
+.modal-search {
+	position: relative;
 }
 
-.search-hotel-item {
+.search-hotel-form {
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #ffffff;
+	width: 570px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.search-hotel-form p {
+	margin: 0;
+}
+
+.search-hotel-form .search-hotel-item {
 	margin-bottom: 25px;
+	position: relative;
 }
 
 .search-hotel-form input {
@@ -299,6 +325,22 @@ main {
 	color: #000000;
 }
 
+.calendar {
+	display: inline-block;
+	padding: 0;
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 10px;
+	right: 65px;
+	font-size: 0;
+	border: none;
+	background-image: url("../img/calendar.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.5;
+}
+
 .modal-search-button {
 	display: inline-block;
 	width: 455px;
@@ -321,6 +363,12 @@ main {
 .modal-search-button:active {
 	color: rgba(255, 255, 255, 0.3);
 	background-color: #5496bd;
+}
+
+.map img {
+	display: block;
+	width: 100%;
+	height: 593px;
 }
 
 .hotel-filters {
@@ -451,28 +499,44 @@ fieldset.type {
 }
 
 .catalog-list {
+	margin: 0;
 	list-style: none;
 }
 
 .catalog-item {
 	display: flex;
 	align-items: center;
+	width: 100%;
+	padding: 30px 0;
+	text-align: left;
+	border-top: 1px solid #f2f2f2;
+}
+
+.catalog-item:last-child {
+	border-bottom: 1px solid #f2f2f2;
 }
 
 .catalog-item h3 {
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
+	margin: 0;
 }
 
 .catalog-item-image {
+	margin-right: 30px;
 	width: 135px;
 	height: 90px;
 }
 
 .catalog-item-info {
-	width: 255px;
+	width: 265px;
 	margin-right: auto;
+}
+
+.catalog-item-info p {
+	margin: 0;
+	margin-bottom: 10px;
 }
 
 .catalog-item a {
@@ -488,15 +552,18 @@ fieldset.type {
 	color: #b2b2b2;
 }
 
+.catalog-item .column {
+	column-count: 2;
+}
 
-.catalog-item-price span {
-	font-size: 14px;
-	line-height: 21px;
-	color: #333333;
+.catalog-item-price {
+	padding-top: 10px;
 }
 
 .catalog-item-price .button,
 .catalog-item-price .button-order {
+	display: inline-block;
+	padding: 2px 15px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 700;
@@ -507,7 +574,6 @@ fieldset.type {
 }
 
 .catalog-item-price .button {
-	width: 110px;
 	background-color: #81b3d2;
 }
 
@@ -523,7 +589,6 @@ fieldset.type {
 }
 
 .catalog-item-price .button-order {
-	width: 135px;
 	background-color: #766357;
 }
 
@@ -538,7 +603,12 @@ fieldset.type {
 	background-color: #503e33;
 }
 
+.catalog-item-rate {
+	width: 115px;
+}
+
 .catalog-item .rate {
+	padding: 5px 15px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
@@ -550,11 +620,21 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
+	padding: 35px 0;
 	color: #000000;
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
+.inner-footer {
+	position: static;
+}
+
 .footer-hashtag {
+	font-size: 21px;
+	line-height: 26px;
 	width: 400px;
 	text-align: center;
 }
@@ -564,19 +644,54 @@ footer {
 	text-align: center;
 }
 
+.social-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 45px;
+	height: 45px;
+	background-color: #81b3d2;
+}
+
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:active path,
+.social-button:focus path {
+	fill: rgba(255, 255, 255, 0.3);
+}
+
 .footer-social ul {
+	display: flex;
+	justify-content: space-between;
+	width: 150px;
 	list-style: none;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .footer-copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 400px;
-	margin: 0;
+	margin: 0 auto;
+	padding: 0;
 	text-align: center;
 }
 
-.footer-copyright span {
+.footer-copyright b {
+	display: block;
+	margin-right: 10px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
 	color: #000000;
+}
+
+.footer-copyright a {
+	display: block;
+	width: 115px;
+	height: 40px;
 }
