@@ -38,6 +38,7 @@ input[type="checkbox"].visually-hidden {
 main {
 	position: relative;
 	text-align: center;
+	box-shadow: 0 5px 15px rgba(0,1,1,.2);
 }
 
 .main-header {
@@ -160,7 +161,8 @@ main {
 }
 
 .reasons-list h3 {
-	margin: 0;
+	width: 155px;
+	margin: 0 auto;
 	margin-bottom: 20px;
 	font-size: 21px;
 	line-height: 21px;
@@ -270,7 +272,7 @@ main {
 
 .reason-points-item h3,
 .reason-points-item p {
-	margin: 0;
+	margin: 0 auto;
 }
 
 .reason-points-item h3 {
