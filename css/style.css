@@ -33,12 +33,12 @@ input[type="checkbox"].visually-hidden {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
+	box-shadow: 0 5px 15px rgba(0,1,1,.2);
 }
 
 main {
 	position: relative;
 	text-align: center;
-	box-shadow: 0 5px 15px rgba(0,1,1,.2);
 }
 
 .main-header {
@@ -291,7 +291,7 @@ main {
 
 .reason-grey {
 	width: 400px;
-	min-height: 150px;
+	min-height: 254px;
 	box-sizing: border-box;
 	padding: 45px 65px;
 	color: #000000;
@@ -389,6 +389,11 @@ main {
 	margin-left: auto;
 }
 
+.search-hotel-item-btn {
+	position: relative;
+	width: 113px;
+}
+
 .adult-item input,
 .children-item input {
 	width: 113px;
@@ -455,6 +460,7 @@ main {
 .minus-btn,
 .plus-btn {
 	position: absolute;
+	top: 0;
 	width: 40px;
 	height: 40px;
 	padding: 0;
@@ -465,11 +471,18 @@ main {
 	cursor: pointer;
 }
 
+.minus-btn {
+	left: 0;
+}
+
+.plus-btn {
+	right: 0;
+}
+
 .minus-btn::after {
 	content: "";
 	position: absolute;
-	top: 20px;
-	left: 125px;
+	right: 14px;
 	width: 12px;
 	height: 3px;
 	background-color: #898989;
@@ -493,8 +506,7 @@ main {
 .plus-btn::before {
 	content: "";
 	position: absolute;
-	top: 20px;
-	left: 195px;
+	right: 15px;
 	width: 11px;
 	height: 3px;
 	background-color: #898989;
@@ -504,18 +516,14 @@ main {
 	content: "";
 	position: absolute;
 	top: 16px;
-	left: 199px;
+	left: 18px;
 	width: 3px;
 	height: 11px;
 	background-color: #898989;
 }
 
 .children-item .minus-btn {
-	left: -45px;
-}
-
-.children-item .plus-btn {
-	left: -45px;
+	left: 65px;
 }
 
 
@@ -545,7 +553,7 @@ main {
 .modal-search-button {
 	display: inline-block;
 	width: 460px;
-	padding: 15px 195px;
+	padding: 20px 20px;
 	margin-top: 25px;
 	font-size: 21px;
 	line-height: 26px;
@@ -622,21 +630,15 @@ main {
 .filter-input-checkbox + label::before {
 	content: "";
 	position: absolute;
-	width: 23px;
-	height: 23px;
+	width: 26px;
+	height: 26px;
 	top: 0;
 	left: -40px;
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
 }
 
-.filter-input-checkbox:checked + label::after {
-	content: "";
-	position: absolute;
-	width: 26px;
-	height: 26px;
-	top: 0;
-	left: -40px;
+.filter-input-checkbox:checked + label::before {
 	background-image: url("../img/checkbox-on.svg");
 	background-repeat: no-repeat;
 }
