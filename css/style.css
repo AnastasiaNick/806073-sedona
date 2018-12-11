@@ -8,7 +8,7 @@ body {
 	font-weight: 700;
 	color: #000000;
 	text-transform: uppercase;
-	background-color: #dae4eb;
+	background-color: #f2f2f2;
 }
 
 a {
@@ -108,11 +108,12 @@ main {
 	justify-content: center;
 	position: relative;
 	min-height: 515px;
+	box-sizing: border-box;
 	padding-top: 70px;
 	margin-bottom: 55px;
 	background-color: #9faab6;
 	background-image: url("../img/background-photo.jpg");
-	background-position: top center;
+	background-position: center 25%;
 	background-repeat: no-repeat;
 }
 
@@ -590,7 +591,7 @@ main {
 	color: #ffffff;
 	background-color: #4e555c;
 	background-image: url("../img/filter-background.jpg");
-	background-position: center;
+	background-position: center 25%;
 	background-repeat: no-repeat;
 }
 
@@ -617,7 +618,7 @@ main {
 }
 
 .filter-option {
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 	padding-left: 40px;
 }
 
@@ -645,11 +646,11 @@ main {
 
 .infrastructure legend,
 .type legend {
-	margin-bottom: 20px;
+	margin-bottom: 24px;
 }
 
 .infrastructure {
-	margin-right: 90px;
+	margin-right: 110px;
 }
 
 fieldset.type {
