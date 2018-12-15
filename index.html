@@ -188,7 +188,7 @@
 					</div>
 			</footer>
 		</div>
-		<script type="text/javascript">
+		<script>
 			var link = document.querySelector(".modal-open-button");
 			var popup = document.querySelector(".modal-search");
 			var form = popup.querySelector("form");
@@ -223,7 +223,7 @@
 
 			});
 
-			form.addEventListener("submit", , function (evt) {
+			form.addEventListener("submit", function (evt) {
 				if (!arrivalDate.value || !departureDate.value || !adultNumber.value || !childrenNumber.value) {
 				evt.preventDefault();
 				console.log("Нужно заполнить все поля");

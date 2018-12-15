@@ -314,7 +314,9 @@ main {
 
 .modal-open-button {
 	display: inline-block;
-	padding: 20px 140px;
+	position: relative;
+	z-index: 1;
+	padding: 25px 140px;
 	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
@@ -335,6 +337,19 @@ main {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+@keyframes slide {
+	0% {transform: translateY(-88px);}
+	20% {transform: translateY(-78px);}
+	30% {transform: translateY(-68px);}
+	40% {transform: translateY(-58px);}
+	50% {transform: translateY(-48px);}
+	60% {transform: translateY(-38px);}
+	70% {transform: translateY(-28px);}
+	80% {transform: translateY(-18px);}
+	90% {transform: translateY(-8px);}
+	100% {transform: translateY(0px);}
+}
+
 .modal-search {
 	position: relative;
 	display: none;
@@ -342,6 +357,7 @@ main {
 
 .modal-show {
 	display: block;
+	animation: slide 0.5s;
 }
 
 .search-hotel-form {
