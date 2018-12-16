@@ -315,7 +315,7 @@ main {
 .modal-open-button {
 	display: inline-block;
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 	padding: 25px 140px;
 	text-align: center;
 	font-size: 21px;
@@ -352,12 +352,13 @@ main {
 
 .modal-search {
 	position: relative;
+	z-index: 2;
 	display: none;
 }
 
 .modal-show {
 	display: block;
-	animation: slide 0.5s;
+	animation: slide 0.3s;
 }
 
 .search-hotel-form {
@@ -569,7 +570,19 @@ main {
 	background-color: #5496bd;
 }
 
+.map {
+	position: relative;
+}
+
+.map iframe {
+	position: relative;
+	z-index: 1;
+}
+
 .map img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	display: block;
 	width: 100%;
 	height: 593px;
