@@ -390,15 +390,16 @@ main {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
+	text-transform: uppercase;
 	color: #000000;
 	background-color: #f2f2f2;
 	border: 2px solid #f2f2f2;
 }
 
-::-webkit-input-placeholder {color:#000000;}
-::-moz-placeholder          {color:#000000;}/* Firefox 19+ */
-:-moz-placeholder           {color:#000000;}/* Firefox 18- */
-:-ms-input-placeholder      {color:#000000;}
+::-webkit-input-placeholder {color:#000000; text-transform: uppercase;}
+::-moz-placeholder          {color:#000000; text-transform: uppercase;}/* Firefox 19+ */
+:-moz-placeholder           {color:#000000; text-transform: uppercase;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#000000; text-transform: uppercase;}
 
 .search-hotel-form input:hover {
 	background-color: #ebebeb;
@@ -577,6 +578,7 @@ main {
 .map iframe {
 	position: relative;
 	z-index: 1;
+	border: 0;
 }
 
 .map img {
