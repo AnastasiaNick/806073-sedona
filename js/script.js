@@ -1,3 +1,4 @@
+var body = document.querySelector("body");
 var link = document.querySelector(".modal-open-button");
 var popup = document.querySelector(".modal-search");
 var form = popup.querySelector("form");
@@ -9,6 +10,8 @@ var childrenNumber = popup.querySelector("[name=children-number]");
 var isStorageSupport = true;
 var adultNumberStorage = "";
 var childrenNumberStorage = "";
+
+body.classList.remove("no-js");
 
 try {
 	adultNumberStorage = localStorage.setItem("adult-number");
@@ -23,14 +26,13 @@ link.addEventListener("click", function (evt) {
 	form.classList.remove("modal-error");
 	arrivalDate.focus();
 
-if (adultNumberStorage) {
-	adultNumber.value = adultNumberStorage;
-} else if (childrenNumberStorage) {
-	childrenNumber.value = childrenNumberStorage;
-} else {
-	arrivalDate.focus();
-}
-
+	if (adultNumberStorage) {
+		adultNumber.value = adultNumberStorage;
+	} else if (childrenNumberStorage) {
+		childrenNumber.value = childrenNumberStorage;
+	} else {
+		arrivalDate.focus();
+	}
 });
 
 form.addEventListener("submit", function (evt) {
