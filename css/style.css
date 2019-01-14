@@ -606,13 +606,14 @@ input[type="checkbox"].visually-hidden {
 .arrival-item input,
 .departure-item input {
 	width: 350px;
-	padding-left: 9px;
+	padding-left: 13px;
 	margin-left: auto;
 }
 
 .search-hotel-item-btn {
 	position: relative;
-	width: 113px;
+	width: 118px;
+	padding-left: 3px;
 }
 
 .adult-item input,
@@ -628,6 +629,7 @@ input[type="checkbox"].visually-hidden {
 	-webkit-box-pack: justify;
 			-ms-flex-pack: justify;
 					justify-content: space-between;
+	padding-top: 5px;
 }
 
 .search-hotel-form input:focus {
@@ -639,6 +641,7 @@ input[type="checkbox"].visually-hidden {
 .search-hotel-form label {
 	display: inline-block;
 	margin-right: 15px;
+	padding-left: 2px;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 26px;
@@ -652,10 +655,12 @@ input[type="checkbox"].visually-hidden {
 
 .adult-item label {
 	margin-right: 35px;
+	padding-left: 1px;
 }
 
 .children-item label {
 	margin-right: 25px;
+	padding-left: 50px;
 }
 
 .calendar {
@@ -754,7 +759,7 @@ input[type="checkbox"].visually-hidden {
 .modal-search-button {
 	display: inline-block;
 	width: 460px;
-	padding: 20px 20px;
+	padding: 17px 20px;
 	margin-top: 25px;
 	font-size: 21px;
 	line-height: 26px;
@@ -901,7 +906,7 @@ fieldset.type {
 }
 
 .cost {
-	width: 318px;
+	width: 319px;
 	text-align: left;
 }
 
@@ -940,10 +945,14 @@ fieldset.type {
 	cursor: pointer;
 }
 
-.cost-range .min-price,
-.cost-range .max-price {
+.cost-range .min-price {
 	width: 90px;
 	padding-left: 65px;
+}
+
+.cost-range .max-price {
+	width: 90px;
+	padding-left: 58px;
 }
 
 .cost-range input {
@@ -959,7 +968,7 @@ fieldset.type {
 
 .range-controls {
 	position: relative;
-	margin-bottom: 32px;
+	margin-bottom: 31px;
 }
 
 .range-controls .range-scale {
@@ -1060,6 +1069,7 @@ fieldset.type {
 	-webkit-box-flex: 1;
 			-ms-flex-positive: 1;
 					flex-grow: 1;
+	padding-top: 5px;
 }
 
 .sorting-title {
@@ -1075,13 +1085,20 @@ fieldset.type {
 	display: -ms-flexbox;
 	display: flex;
 	justify-content: flex-start;
+	flex-wrap: wrap;
 	list-style: none;
 	margin: 0;
 	margin-right: auto;
+	padding-left: 30px;
 }
 
 .sorting-item {
-	margin-right: 35px;
+	width: 77px;
+	margin-right: 3px;
+}
+
+.sorting-item:nth-child(2) {
+	margin-right: 18px;
 }
 
 .sorting-item a {
@@ -1116,6 +1133,7 @@ fieldset.type {
 	list-style: none;
 	font-size: 0;
 	margin: 0;
+	padding-top: 5px;
 }
 
 .sorting-arrow-up {
@@ -1159,7 +1177,7 @@ fieldset.type {
 	width: 100%;
 	-webkit-box-sizing: border-box;
 					box-sizing: border-box;
-	padding: 24px 72px 30px;
+	padding: 23px 72px 30px;
 	text-align: left;
 	border-top: 1px solid #f2f2f2;
 }
@@ -1266,10 +1284,12 @@ fieldset.type {
 
 .catalog-item .summary {
 	margin: 0;
+	padding-top: 4px;
 }
 
 .catalog-item-rate {
-	width: 115px;
+	width: 113px;
+	padding-top: 1px;
 	text-align: right;
 }
 
@@ -1316,7 +1336,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	z-index: 1;
-	padding: 35px 0;
+	padding: 33px 0;
 	color: #000000;
 	background-color: rgba(255, 255, 255, 0.9);
 }
@@ -1348,7 +1368,7 @@ footer {
 			-ms-flex-align: center;
 					align-items: center;
 	width: 45px;
-	height: 45px;
+	height: 48px;
 	margin-left: 3px;
 	margin-right: 3px;
 	background-color: #81b3d2;

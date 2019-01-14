@@ -37,13 +37,13 @@ link.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
 	if (!arrivalDate.value || !departureDate.value || !adultNumber.value || !childrenNumber.value) {
-	evt.preventDefault();
-	form.classList.add("modal-error");
-	console.log("Нужно заполнить все поля");
+		evt.preventDefault();
+		form.classList.add("modal-error");
+		console.log("Нужно заполнить все поля");
 	} else {
 		if (isStorageSupport) {
-		localStorage.setItem("adult-number", adultNumber.value);
-		localStorage.setItem("children-number", childrenNumber.value);
+			localStorage.setItem("adult-number", adultNumber.value);
+			localStorage.setItem("children-number", childrenNumber.value);
 		}
 	}
 });
